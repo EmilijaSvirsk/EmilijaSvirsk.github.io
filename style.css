@@ -28,13 +28,60 @@ background
     padding: 0;
     font-family: 'Kumbh Sans', sans-serif;
 }
+
+/*Loader*/
+.loader-wrapper {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #121222;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+  }
+  .loader {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    border: 4px solid #Fff;
+    animation: loader 2s infinite ease;
+  }
+  .loader-inner {
+    vertical-align: top;
+    display: inline-block;
+    width: 100%;
+    background-color: #fff;
+    animation: loader-inner 2s infinite ease-in;
+  }
+  
+  @keyframes loader {
+    0% { transform: rotate(0deg);}
+    25% { transform: rotate(180deg);}
+    50% { transform: rotate(180deg);}
+    75% { transform: rotate(360deg);}
+    100% { transform: rotate(360deg);}
+  }
+  
+  @keyframes loader-inner {
+    0% { height: 0%;}
+    25% { height: 0%;}
+    50% { height: 100%;}
+    75% { height: 100%;}
+    100% { height: 0%;}
+  }
+/*Loader end*/
+
 /*NAVBAR*/
 .navbar{
     height: 80px;
     font-size: 1.2rem;
     position: sticky;
     top: 0;
-    z-index: 999;
+    z-index: 1000;
 }
 .navbarbox{
     /*background: #131313;*/
@@ -46,20 +93,20 @@ background
     font-size: 1.2rem;
     position: absolute;
     top: 0;
-    z-index: 999;
+    z-index: 1000;
 }
 
 /*City image on navbar */
 .background{
-    background: linear-gradient(to bottom, #0573d3 7%, #8cbeeb 70%);
+    background: linear-gradient(to bottom, #0573d3 0%, #8cbeeb 100%);
     position: relative;
     width: 100%;
-    height: 10vh;
+    height: 80px;
     padding-top: 0px;
     display: absolute;
     justify-content: center;
     align-items: center;
-    z-index: 1;
+    z-index: 900;
   }
  
   .back-image:nth-child(1){
@@ -68,9 +115,9 @@ background
      background-size: 300px;
      position: absolute;
      width: 100%;
-     height: 10vh;
+     height: 80px;
      margin-top: 0px;
-     z-index: 2;
+     z-index: 901;
   }
  
   .back-image:nth-child(2){
@@ -79,9 +126,9 @@ background
      background-size: 300px;
      position: absolute;
      width: 100%;
-     height: 10vh;
+     height: 90px;
      margin-top: 0px;
-     z-index: 3;
+     z-index: 902;
  }
  
  .back-image:nth-child(3){
@@ -90,9 +137,9 @@ background
      background-size: 300px;
      position: absolute;
      width: 100%;
-     height: 11vh;
+     height: 100px;
      margin-top: 0px;
-     z-index: 4;
+     z-index: 903;
  }
  
  .back-image:nth-child(4){
@@ -101,9 +148,9 @@ background
      background-size: 300px;
      position: absolute;
      width: 100%;
-     height: 15vh;
+     height: 120px;
      margin-top: 0px;
-     z-index: 5;
+     z-index: 904;
  }
  .back-image:nth-child(5){
     background-image: url("images/city/city_4.png");
@@ -111,9 +158,9 @@ background
      background-size: 300px;
      position: absolute;
      width: 100%;
-     height: 15vh;
+     height: 120px;
      margin-top: 0px;
-     z-index: 5;
+     z-index: 905;
  }
 /*END City image on navbar */
 
