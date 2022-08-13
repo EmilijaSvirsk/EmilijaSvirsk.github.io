@@ -440,7 +440,17 @@ html,body{
 
 .main__content h2 {
     font-size: 4rem;
-    background-image: linear-gradient(to bottom, #abd8ff 0%, #0281f0  100%);
+    background-image: linear-gradient(to bottom, #c3e3ff 0%, #62b6ff  100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.main__content h3 {
+    font-size: 3.1rem;
+    background-image: linear-gradient(to bottom, #84c6ff 0%, #0281f0  100%);
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -522,6 +532,8 @@ html,body{
 
 /* Mobile Responsive */
 @media screen and (max-width: 768px) {
+    
+
     .main__container {
         display: grid;
         grid-template-columns: auto;
@@ -544,6 +556,10 @@ html,body{
 
     .main__content h2 {
         font-size: 3rem;
+    }
+
+    .main__content h3 {
+        font-size: 2.5rem;
     }
 
     .main__content p {
@@ -572,6 +588,10 @@ html,body{
 
     .main__content h2 {
         font-size: 2rem;
+    }
+
+    .main__content h3 {
+        font-size: 1.8rem;
     }
 
     .main__content p {
