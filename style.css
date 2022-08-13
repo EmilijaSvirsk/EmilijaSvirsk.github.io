@@ -552,14 +552,15 @@ html,body{
     }
 
     .main__img{
-        margin: -175px -100px;
-        height: 400px;
-        width: 200px;
+        margin: -175px -145px;
+        height: 500px;
+        width: 290px;
     }
 
     #window0 {
-        margin: -175px -102px;
-        width: 205px;
+        margin: -175px -147px;
+        height: 500px;
+        width: 295px;
     }
 }
 
@@ -585,9 +586,13 @@ html,body{
 
     .main__img{
         margin: -180px -100px;
+        height: 400px;
+        width: 200px;
     }
     #window0 {
         margin: -180px -102px;
+        height: 400px;
+        width: 205px;
     }
 }
 
