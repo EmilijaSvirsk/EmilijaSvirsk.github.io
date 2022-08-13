@@ -430,8 +430,7 @@ html,body{
 
 .main__content h1 {
     font-size: 4rem;
-    background-color: #ff8177;
-    background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+    background-image: linear-gradient(to top, #f7d875 0%, #ff9100 100%);
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -441,8 +440,17 @@ html,body{
 
 .main__content h2 {
     font-size: 4rem;
-    background-color: #ff8177;
-    background-image: linear-gradient(to top, #b721ff 0%, #21d4fd 100%);
+    background-image: linear-gradient(to bottom, #c3e3ff 0%, #62b6ff  100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.main__content h3 {
+    font-size: 3.1rem;
+    background-image: linear-gradient(to bottom, #84c6ff 0%, #0281f0  100%);
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -458,8 +466,9 @@ html,body{
 }
 
 .main__btn {
+    z-index: 20;
     font-size: 1rem;
-    background-image: linear-gradient(to top, #f77062 0%, #fe5196 100%);
+    background-image: linear-gradient(to top, #f77062 0%, #ff8615 100%);
     padding: 14px 32px;
     border: none;
     border-radius: 4px;
@@ -485,7 +494,7 @@ html,body{
     left: 0;
     width: 0;
     height: 100%;
-    background-color: #4837ff;
+    background-color: #3776ff;
     transition: all 0.35s;
     border-radius: 4px;
 }
@@ -500,22 +509,38 @@ html,body{
 
 .main__img--container {
     text-align: center;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
 }
 
-#main__img{
-    height: 80%;
-    width: 80%;
+.main__img{
+    margin: 50px -150px;
+    position: absolute;
+    height: 667px;
+    width: 350px;
+}
+
+#window0 {
+    margin: 50px -152px;
+    width: 355px;
 }
 
 /* Mobile Responsive */
 @media screen and (max-width: 768px) {
+    
+
     .main__container {
         display: grid;
         grid-template-columns: auto;
         align-items: center;
         justify-self: center;
         width: 100%;
-        margin: 0 auto;
+        margin: -50px auto;
         height: 90vh
     }
 
@@ -533,9 +558,25 @@ html,body{
         font-size: 3rem;
     }
 
+    .main__content h3 {
+        font-size: 2.5rem;
+    }
+
     .main__content p {
         margin-top: 1rem;
         font-size: 1.5rem;
+    }
+
+    .main__img{
+        margin: -175px -145px;
+        height: 500px;
+        width: 290px;
+    }
+
+    #window0 {
+        margin: -175px -147px;
+        height: 500px;
+        width: 295px;
     }
 }
 
@@ -549,6 +590,10 @@ html,body{
         font-size: 2rem;
     }
 
+    .main__content h3 {
+        font-size: 1.8rem;
+    }
+
     .main__content p {
         margin-top: 2rem;
         font-size: 1.5rem;
@@ -557,6 +602,17 @@ html,body{
     .main__btn {
         padding: 12px 36px;
         margin: 2.5rem 0;
+    }
+
+    .main__img{
+        margin: -180px -100px;
+        height: 400px;
+        width: 200px;
+    }
+    #window0 {
+        margin: -180px -102px;
+        height: 400px;
+        width: 205px;
     }
 }
 
