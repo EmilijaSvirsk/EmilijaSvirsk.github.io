@@ -421,7 +421,6 @@ html,body{
     justify-self: center;
     margin: 0 auto;
     height: 90vh;
-    background-color: #111120;
     z-index: 1;
     width: 100%;
     max-width: 1300px;
@@ -469,7 +468,7 @@ html,body{
     z-index: 20;
     font-size: 1rem;
     background-image: linear-gradient(to top, #f77062 0%, #ff8615 100%);
-    padding: 14px 32px;
+    padding: 0px 0px;
     border: none;
     border-radius: 4px;
     color: #fff;
@@ -481,10 +480,12 @@ html,body{
 }
 
 .main__btn a {
+    display: block;
+    padding: 14px 32px;
     position: relative;
     z-index: 2;
     color: #fff;
-    text-decoration: none; /*??*/
+    text-decoration: none; 
 }
 
 .main__btn:after {
@@ -615,8 +616,77 @@ html,body{
         width: 205px;
     }
 }
+/* About Section CSS */
+.about {
+    background: #111120;
+}
 
-/* Services Sectin CSS */
+.about__container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+    justify-self: center;
+    margin: 0 auto;
+    height: 90vh;
+    background-color: #111120;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    padding: 0 50px;
+}
+
+.about h1 {
+    font-size: 4rem;
+    background-image: linear-gradient(to top, #f7d875 0%, #ff9100 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.about p{
+    margin-top: 1rem;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+.about__links{
+    display: flex;
+}
+
+.about__links a{
+    background-image: linear-gradient(to top, #fa633d 30%, #ff8615 80%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    display: block;
+    padding: 20px 20px;
+    font-size: 3rem;
+}
+
+.about__img--container {
+    text-align: center;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+.about__img{
+    margin: 100px -100px;
+    position: absolute;
+    height: 200px;
+    width: 200px;
+}
+
+/* Services Section CSS */
 .services {
     background: #111120;
     display: flex;
@@ -626,8 +696,7 @@ html,body{
 }
 
 .services h1 {
-    background-color: #ff8177;
-    background-image: linear-gradient(to right, #ff8177 0%, #ff867a 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);
+    background-image: linear-gradient(to right, #ffd04e 0%, #ffca7a 21%, #f9da85 52%, #ec8734 78%, #f15811 100%);
     background-size: 100%;
     margin-bottom: 5rem;
     font-size: 2.5rem;
