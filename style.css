@@ -687,7 +687,7 @@ html,body{
 }
 
 /* Services Section CSS */
-.services {
+.projects {
     background: #111120;
     display: flex;
     flex-direction: column;
@@ -695,7 +695,7 @@ html,body{
     height: 100vh;
 }
 
-.services h1 {
+.projects h1 {
     background-image: linear-gradient(to right, #ffd04e 0%, #ffca7a 21%, #f9da85 52%, #ec8734 78%, #f15811 100%);
     background-size: 100%;
     margin-bottom: 5rem;
@@ -706,89 +706,96 @@ html,body{
     -moz-text-fill-color: transparent;
 }
 
-.services__container {
+.projects__container {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
 
-.services__card{
+.projects__card{
     margin: 1rem;
     height: 525px;
-    width: 400px;
+    width: 300px;
     border-radius: 4px;
-    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17,17,17,0.6) 100%), url('/images/cat-img-1.jpg');
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17,17,17,0.6) 100%), 
+    url('/images/projects/encounterMe.png');
     background-size: cover;
     position: relative;
     color: #fff;
 }
 
-.services__card:nth-child(2) {
+.projects__card:nth-child(2) {
     margin: 1rem;
     height: 525px;
-    width: 400px;
+    width: 300px;
     border-radius: 4px;
     background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17,17,17,0.6) 100%), 
-    url('/images/cat-img-2.jpg');
+    url('/images/projects/locationApp.png');
     background-position: 65%;
     background-size: cover;
     position: relative;
     color: #fff;
 }
 
-.services h2 {
+.projects h2 {
     position: absolute;
     top: 350px;
-    left: 30px;
+    left: 15px;
 }
 
-.services__card p{
+.projects__card p{
     position: absolute;
-    top: 400px;
-    left: 30px;
+    top: 395px;
+    left: 15px;
 }
 
-.services__card button {
+.projects__card img{
+    margin-left: 50px;
+    height: 470px;
+    width: 260px;
+}
+
+.projects__card button {
     color: #fff;
-    padding: 10px 20px;
+    padding: 10px 40px;
     border: none;
     outline: none;
     border-radius: 4px;
-    background: #f77062;
+    background: #f79962;
     position: absolute;
-    top: 440px;
-    left: 30px;
+    top: 439px;
+    left: 15px;
     font-size: 1rem;
     cursor: pointer;
 }
 
-.services__card:hover {
+.projects__card:hover {
     transform: scale(1.075);
     transition: 0.2s ease-in;
     cursor: pointer;
 }
 
 @media screen and (max-width: 960px){
-    .services{
+    .projects{
         height: 1600px;
     }
 
-    .services h1 {
+    .projects h1 {
         font-size: 2rem;
         margin-top: 12rem;
     }
 }
 
 @media screen and (max-width: 480px){
-    .services{
+    .projects{
         height: 1400px;
     }
 
-    .services h1 {
+    .projects h1 {
         font-size: 1.2rem;
     }
 
-    .services__card{
+    .projects__card{
         width: 300px;
     }
 }
