@@ -41,22 +41,17 @@
                 </div>
                 <ul class="navbar__menu">
                     <li class="navbar__item">
-                        <a href="/" class="navbar__links">
+                        <a href="#about" class="navbar__links">
                         About    
                         </a>
                     </li>
                     <li class="navbar__item">
-                        <a href="/tech.html" class="navbar__links">
-                        My Skills    
-                        </a>
-                    </li>
-                    <li class="navbar__item">
-                        <a href="/" class="navbar__links">
-                        Work    
+                        <a href="#project" class="navbar__links">
+                        Projects    
                         </a>
                     </li>
                     <li class="navbar__btn">
-                        <a href="/" class="button">
+                        <a href="https://www.linkedin.com/in/emilija-svirskyt%C4%97-8441471b7/" class="button">
                         Contact    
                         </a>
                     </li>
@@ -101,79 +96,56 @@
                 </div>
             </div>
             <div class="about__img--container">
-                <img src="images/testt.png" alt="pic" class="about__img">
+                <img src="images/window/windows.png" alt="pic" class="about__img">
             </div>
         </div>
     </div>
 
     <!-- Projects Section -->
-    <div class="projects">
+    <div class="projects" id="project">
         <h1>Check out my projects</h1>
         <div class="projects__container">
-            <div class="projects__card">
-                <img src="images/projects/encounterMeDrawing.png" alt="EncounterMe">
-                <h2>EncounterMe</h2>
-                <p>Android app created with Xamarin</p>
-                <button>Explore</button>
-            </div>
-            <div class="projects__card">
-                <h2>LocationApp</h2>
-                <p>Location finder written with C#</p>
-                <button>Explore</button>
+            <div class="projects--card__container">
+                <div class="projects__card">
+                    <img src="images/projects/encounterMeDrawing.png" alt="EncounterMe">
+                    <h2>EncounterMe</h2>
+                    <p>Android app created with Xamarin</p>
+                    <div class="projects__btn"><a href="https://github.com/DominykasVi/EncounterMe">Explore</a></div>
+                </div>
+                <div class="projects__card">
+                    <img src="images/projects/locationAppDrawing.png" alt="LocationApp">
+                    <h2>LocationApp</h2>
+                    <p>Location finder written in C#</p>
+                    <div class="projects__btn"><a href="https://github.com/krtrinkunas/EncounterMe">Explore</a></div>
+                </div>
             </div>
         </div>
     </div>
 
     <!-- Footer Section-->
     <div class="footer__container">
-        <div class="footer__links">
-            <div class="footer__link--wrapper">
-                <div class="footer__link--items">
-                    <h2>About Us</h2>
-                    <a href="/">How it works</a>
-                    <a href="/">Testimonals</a>
-                    <a href="/">Careers</a>
-                    <a href="/">Investments</a>
-                    <a href="/">Terms of Services</a>
-                </div>
-            </div>
-        </div>
         <div class="social__media">
             <div class="social__media--wrap">
                 <div class="footer__logo">
                     <a href="/" id="footer__logo">
-                        <i class="fa-solid fa-paw"></i>
                         EMILIJASVIRSK
                     </a>
                 </div>
-                <p class="website__rights">EMILIJASVIRSK 2022.</p>
+                <p class="website__rights">EMILIJASVIRSK 2022</p>
                 <div class="social__icons">
-                    <a href="/" class="social__icon--link"
-                    target="_blank">
-                        <i class="fab fa-facebook"></i>
-                    </a>
-                    <a href="/" class="social__icon--link"
-                    target="_blank">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                    <a href="/" class="social__icon--link"
-                    target="_blank">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                    <a href="/" class="social__icon--link"
+                    <a href="https://www.linkedin.com/in/emilija-svirskyt%C4%97-8441471b7/" class="social__icon--link"
                     target="_blank">
                         <i class="fab fa-linkedin"></i>
                     </a>
-                    <a href="/" class="social__icon--link"
+                    <a href="https://github.com/EmilijaSvirsk" class="social__icon--link"
                     target="_blank">
-                        <i class="fab fa-youtube"></i>
+                        <i class="fab fa-github"></i>
                     </a>
                 </div>
             </div>
         </div>
     </div>
-    <script src="app.js"></script>
-
+    
     <!--Loader section-->
     <div class="loader-box">
         <div class="loader-wrapper">
@@ -182,6 +154,7 @@
             </span>
         </div>
     </div>
-    
+
+    <script src="app.js"></script>
 </body>
 </html>
